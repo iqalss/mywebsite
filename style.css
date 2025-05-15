@@ -1,0 +1,161 @@
+/* Body dan pengaturan umum */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.dashboard-header {
+  background-color: #ff9966;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.user-info {
+  margin-top: 10px;
+}
+
+.user-info span {
+  font-size: 18px;
+}
+
+.logout-btn {
+  background-color: #ff5e62;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d04c49;
+}
+
+.dashboard-content {
+  margin-top: 20px;
+}
+
+.overview, .challenges, .shortlink-section {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.challenge-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.challenge-item {
+  background-color: #fefefe;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.challenge-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.start-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.start-btn:hover {
+  background-color: #218838;
+}
+
+.challenge-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.challenge-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.challenge-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.shortlink-section {
+  margin-top: 30px;
+}
+
+.shortlink-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shortlink-item {
+  background-color: #fff8e1;
+  padding: 16px;
+  border: 1px solid #ffe082;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.shortlink-item p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.shortlink-item button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.shortlink-item button:hover {
+  background-color: #e67e22;
+}
